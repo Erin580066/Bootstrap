@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<style>
+	div[class*="col-"]{
+		background:blue;
+		color:#fff;
+		border:1px solid #000;
+		height:50px;
+		line-height:50px;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-1">col-lg-1</div>
+			<div class="col-lg-11">col-lg-11</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3">col-lg-3</div>
+			<div class="col-lg-4">col-lg-4</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">col-lg-6</div>
+			<div class="col-lg-6">col-lg-6</div>
+		</div>
+		<!--第三个会被挤下来类似于浮动布局-->
+		<div class="row">
+			<div class="col-lg-6">col-lg-6</div>
+			<div class="col-lg-6">col-lg-6</div>
+			<div class="col-lg-6">col-lg-6</div>
+		</div>
+		<!--大于1200的排布-->
+		<div class="row">
+			<div class="col-lg-4">col-lg-4</div>
+			<div class="col-lg-4">col-lg-4</div>
+			<div class="col-lg-4">col-lg-4</div>
+		</div>
+		<!--大于992的排布-->
+		<div class="row">
+			<div class="col-md-4">col-md-4</div>
+			<div class="col-md-4">col-md-4</div>
+			<div class="col-md-4">col-md-4</div>
+		</div>
+		<!--大于768的排布-->
+		<div class="row">
+			<div class="col-sm-4">col-sm-4</div>
+			<div class="col-sm-4">col-sm-4</div>
+			<div class="col-sm-4">col-sm-4</div>
+		</div>
+		<!--小于768的排布 也就是移动端的布局-->
+		<div class="row">
+			<div class="col-xs-4">col-xs-4</div>
+			<div class="col-xs-4">col-xs-4</div>
+			<div class="col-xs-4">col-xs-4</div>
+		</div>
+		<!--组合模式-->
+		<div class="row">
+			<div class="col-lg-4 col-md-6">col-lg-4 col-md-6</div>
+			<div class="col-lg-4 col-md-6">col-lg-4 col-md-6</div>
+			<div class="col-lg-4 col-md-6">col-lg-4 col-md-6</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-2.2.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
